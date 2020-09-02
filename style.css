@@ -1,0 +1,263 @@
+/* GLOBAL STYLE */
+@font-face {
+    font-family: "gotham";
+    src: url("/fonts/Gotham-Font/GothamBold.ttf") format("ttf"),       
+   }
+@font-face {
+    font-family: "gotham-2";
+    src: url(/fonts/Gotham-Font/GothamMedium.ttf) format("ttf");
+}
+@font-face {
+    font-family: "roboto";
+    src:  url("/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf") format("ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    font-family: "gotham";
+    font-size: 15px;
+    color: black;
+}
+h2{
+    font-family: "gotham";
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #261025;
+    text-align: center;
+    margin-top: 50px;
+}
+button{
+    background-color: #FFD166;
+    padding: 25px 15px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "gotham";
+    text-transform: uppercase;
+}
+h2:after{
+    content: '';
+    background-color: black;
+    display: block;
+    height: 2px;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* HEADER */
+.header{
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    box-shadow: 10px 4px 0px 0px grey;
+}
+#logo img{
+    max-width: 100px;
+}
+#logo{
+padding-right: 20%;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30%;
+}
+nav ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-weight: 600;
+}
+nav a:hover{
+    background-color: rgb(214, 214, 214);
+    border: 1px solid grey;
+    padding: 8px 8px;
+}
+nav ul li{
+    list-style: none;
+}
+nav img{
+    max-width: 30px;
+}
+nav .billets{
+    border: 1px solid grey;
+    background-color: rgb(214, 214, 214);
+    padding: 10px 10px;
+}
+/* HERO */
+.hero{
+    min-height: 90vh;
+    margin: auto;
+    background: url(/images/photo-hero-1.png);
+    background-size:cover; 
+    position: relative;
+}
+.hero a{
+    font-family: "roboto";
+    position: absolute;
+    left: 25%;
+    top: 89%;
+}
+.hero button{
+    position: absolute;
+    left: 36%;
+    top: 86%;
+    padding: 20px 30px;
+    background-color: #261025;
+    border: 1px solid grey;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* CONTENT-1 */
+.content-1{
+    margin-top: 50px;
+}
+.content-1 h2{
+    text-align: center;
+    margin-top: 50px;   
+}
+.content-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+
+}
+.content-2 img{
+  padding: 0 0 0 20px;
+}
+.content-2 h4{
+    text-align: center;
+    font-family: "roboto";
+    color: #073B4C;
+    margin-bottom: 40px;
+}
+.content-2 .texte-3{
+    margin-top: 20px;
+    margin-left: 14%;
+    margin-bottom: 20px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.content-2 button{
+    margin-left: 38%;
+    margin-top: 40px;
+}
+.content-2 .texte img{
+    max-width: 30px;
+    margin-right: 20px;
+}
+.content-2 .texte-2 p{
+    margin-left: 5%;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+/* ACTUALITES */
+.cartes-bloc-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.box{
+    margin-right: 80px;
+    background: url('./images/theatre.png');
+    min-height: 30vh;
+    width: 25%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.box-1{
+   
+    background: url('./images/theatre.png');
+
+}
+.box .btn{
+    position: absolute;
+   right: 0;
+ bottom: -80px;
+}
+.carte{
+    text-align: center;
+    margin-right: 55%;
+    background: rgb(255, 255, 255,0.7);
+    min-height: 30vh;
+    border-radius: 5px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.box-2{
+    
+    background: url('./images/corpsnoir.png');
+ 
+}
+.box-3{
+    margin-right: 80px;
+    background: url('./images/garonne.png');
+    min-height: 30vh;
+    width: 25%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.box-4{
+    margin-right: 80px;
+    background: url('./images/cachette.png');
+    min-height: 30vh;
+    width: 25%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.box-5{
+    margin-right: 80px;
+    background: url('./images/adamlaloum.png');
+    min-height: 30vh;
+    width: 25%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.box-6{
+    margin-right: 80px;
+    background: url('./images/cabo.png');
+    min-height: 30vh;
+    width: 25%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 20px;
+}
